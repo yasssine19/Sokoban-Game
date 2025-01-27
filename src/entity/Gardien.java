@@ -28,8 +28,8 @@ public class Gardien extends Mobile {
             	this.setPosition(newPosition);
             	break;
                 
-            case CAISSE:
-            	boolean deplacement = entrepot.getCaisse().deplacerCaisse(direction);
+            case CAISSE, CAISSE_SUR_CIBLE:
+            	boolean deplacement = entrepot.getCaisse(newPosition).deplacerCaisse(direction);
             	if (deplacement == false) break;
                 deplacerGardien(direction);
                 break;

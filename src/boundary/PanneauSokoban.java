@@ -30,7 +30,7 @@ public class PanneauSokoban extends JPanel {
 
     private IControleur controleur;
 
-    public PanneauSokoban( IControleur controleur ) {
+    public PanneauSokoban(IControleur controleur) {
         this.controleur = controleur;
         try {
             images = new EnumMap< ContenuZone, Image >(

@@ -2,6 +2,7 @@ package control;
 
 import entity.ContenuZone;
 import entity.Direction;
+import entity.Niveau;
 
 /**
  * Interface du controleur pour le jeu Sokoban 
@@ -21,6 +22,13 @@ public interface IControleur {
 	 */
     void action( Direction direction );
 
+    
+    Niveau getNiveauActuel();
+    /**
+	 * Méthode appellée par l'IHM pour obtenir le niveau actuel.
+	 * 
+    public Niveau getNiveauActuel();
+    
 	/**
 	 * Méthode appellée par l'IHM pour savoir si le jeu est gagné.
 	 * 
